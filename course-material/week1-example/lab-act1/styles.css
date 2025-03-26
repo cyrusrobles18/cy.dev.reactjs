@@ -1,0 +1,81 @@
+/* Basic body styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 2em;
+  background-color: #fafafa;
+}
+
+/* Input and button layout */
+#taskInput,
+#addButton {
+  font-size: 1rem;
+  padding: 0.5em;
+  margin: 0.2em 0;
+}
+
+#taskInput {
+  width: 200px;
+}
+
+#addButton {
+  cursor: pointer;
+}
+
+/* Task list styling */
+#taskList {
+  list-style-type: none;
+  padding-left: 0;
+  margin-top: 1em;
+}
+
+#taskList li {
+  background-color: #fff;
+  margin-bottom: 0.5em;
+  padding: 0.5em;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: background-color 0.2s;
+}
+
+#taskList li:hover {
+  background-color: #f0f0f0;
+}
+
+/* Completed task appearance */
+.completed {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* Buttons inside the list items */
+.remove-btn,
+.complete-btn {
+  margin-left: 0.5em;
+  font-size: 0.8rem;
+  padding: 0.4em 0.6em;
+  cursor: pointer;
+}
+
+.remove-btn {
+  background-color: #e74c3c; /* Red-ish */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.complete-btn {
+  background-color: #2ecc71; /* Green-ish */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+
+.remove-btn:hover {
+  background-color: #c0392b;
+}
+
+.complete-btn:hover {
+  background-color: #27ae60;
+}
